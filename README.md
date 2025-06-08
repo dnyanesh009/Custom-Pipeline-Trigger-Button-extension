@@ -23,20 +23,25 @@ The button communicates securely with an **Azure Function**, which performs the 
 
 ---
 
+```
 ## 🗂️ Project Structure
 
-```
-
-src/
-├── workItemControl.ts      # Main logic (written in TypeScript)
-├── workItemControl.html    # HTML for the UI layout
-├── styles.css              # Custom styles (optional)
-├── SDK.min.js              # Azure DevOps SDK (bundled locally)
-webpack.config.js           # Webpack build configuration
-vss-extension.json          # Extension manifest file
+````
+Custom-Pipeline-Trigger-Button-extension/
+    dist/
+    ├── workItemControl.ts      # Main logic (written in TypeScript)
+    ├── workItemControl.html    # HTML for the UI layout
+    ├── styles.css              # Custom styles (optional)
+    ├── SDK.min.js 
+    src/
+    ├── workItemControl.ts      # Main logic (written in TypeScript)
+    ├── workItemControl.html    # HTML for the UI layout
+    ├── styles.css              # Custom styles (optional)
+    ├── SDK.min.js              # Azure DevOps SDK (bundled locally)
+    webpack.config.js           # Webpack build configuration
+    vss-extension.json          # Extension manifest file
 
 ````
-
 ---
 
 ## ⚙️ Prerequisites
@@ -48,7 +53,6 @@ vss-extension.json          # Extension manifest file
   ```bash
   npm install -g tfx-cli
 ````
-
 ---
 
 ## 🏗️ Building the Extension
