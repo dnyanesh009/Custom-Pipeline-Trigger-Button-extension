@@ -44,6 +44,7 @@ Custom-Pipeline-Trigger-Button-extension/
     vss-extension.json          # Extension manifest file
 
 ````
+```
 ---
 
 ## ⚙️ Prerequisites
