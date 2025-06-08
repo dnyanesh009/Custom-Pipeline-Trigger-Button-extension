@@ -1,4 +1,6 @@
-Here's the **complete `README.md`** file in Markdown format for your Azure DevOps custom extension that triggers a pipeline using an Azure Function:
+Here's the **complete `README.md`** file in Markdown format for your Azure DevOps custom extension that triggers a pipeline 
+
+yet to implement  - using an Azure Function:
 
 ---
 
