@@ -1,0 +1,53 @@
+{
+  "manifestVersion": 1,
+  "id": "custom-pipeline-trigger-button",
+  "name": "Custom Pipeline Trigger Button",
+  "publisher": "AnkitaGhogare",
+  "version": "1.1.9",
+  "description": "Adds a customizable button to work items to trigger pipelines.",
+  "icons": {
+    "default": "images/icon.png"
+  },
+  "categories": [
+    "Azure Boards"
+  ],
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "externallyConnectable": {
+    "allowedOrigins": [
+      "https://dev.azure.com"
+    ]
+  },  
+  "contributions": [
+    {
+      "id": "pipeline-trigger-button-control",
+      "type": "ms.vss-work-web.work-item-form-control",
+      "description": "Custom button to trigger pipelines from work items",
+      "targets": [
+        "ms.vss-work-web.work-item-form"
+      ],
+    "properties": {
+    "name": "Trigger Pipeline",
+    "uri": "dist/workItemControl.html",
+    "height": 150
+        }
+    }
+  ],
+  "files": [
+    {
+      "path": "dist",
+      "addressable": true
+    },
+    {
+      "path": "images",
+      "addressable": true
+    }
+  ],
+  "scopes": [
+    "vso.build_execute",
+    "vso.project"
+  ]
+}

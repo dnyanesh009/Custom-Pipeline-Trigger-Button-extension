@@ -1,0 +1,33 @@
+{
+  "name": "azure-devops-pipeline-button",
+  "version": "1.0.0",
+  "description": "Custom Azure DevOps button extension to trigger pipelines from work items.",
+  "main": "dist/workItemControl.js",
+  "scripts": {
+    "build": "tsc && cp src/workItemControl.html dist/ && cp src/styles.css dist/",
+    "watch": "tsc --watch",
+    "clean": "rm -rf dist",
+    "start": "echo \"Use 'tfx extension create' to package and publish.\""
+  },
+  "author": "Ankita Ghogare",
+  "license": "MIT",
+  "keywords": [
+    "azure-devops",
+    "extension",
+    "pipeline",
+    "button"
+  ],
+  "dependencies": {
+    "azure-devops-extension-api": "^4.254.0",
+    "azure-devops-extension-sdk": "^4.0.2"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^13.0.0",
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.3",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  }
+}

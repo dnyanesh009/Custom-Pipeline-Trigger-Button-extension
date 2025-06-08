@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Trigger Pipeline</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'self'; frame-ancestors https://*.visualstudio.com https://*.dev.azure.com;">
+</head>
+<body>
+  <div class="container">
+    <label for="pipelineId">Pipeline ID:</label>
+    <input type="text" id="pipelineId" placeholder="Enter Pipeline ID" />
+
+    <label for="orgUrl">Organization URL:</label>
+    <input type="url" id="orgUrl" placeholder="https://dev.azure.com/your-org" />
+
+    <label for="project">Project Name:</label>
+    <input type="text" id="project" placeholder="Enter Project Name" />
+
+    <label for="patToken">PAT Token:</label>
+    <input type="password" id="patToken" placeholder="Enter PAT Token" />
+
+    <button id="triggerButton">Trigger Pipeline</button>
+    <div id="status"></div>
+  </div>
+
+  <!-- Use locally bundled SDK -->
+  <!-- <script src="SDK.min.js"></script> -->
+  <!-- <script type="module" src="workItemControl.js"></script> -->
+  <script src="workItemControl.js"></script>
+
+</body>
+</html>
