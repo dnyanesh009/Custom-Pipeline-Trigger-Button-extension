@@ -44,18 +44,18 @@ Custom-Pipeline-Trigger-Button-extension/
     vss-extension.json          # Extension manifest file
 
 ````
-```
 ---
 
 ## ⚙️ Prerequisites
 
 - [Node.js](https://nodejs.org/)
-- [TFX CLI](https://github.com/microsoft/tfs-cli):  
+- [TFX CLI](https://github.com/microsoft/tfs-cli)  
   Install via:
 
   ```bash
   npm install -g tfx-cli
-````
+
+
 ---
 
 ## 🏗️ Building the Extension
