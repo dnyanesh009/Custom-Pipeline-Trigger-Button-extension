@@ -19,17 +19,16 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'], // ✅ This inlines the CSS to JS
-      },      
+        use: ['style-loader', 'css-loader'], // ✅ CSS will be injected into <style>
+      },
     ],
   },
   plugins: [
     new CopyWebpackPlugin({
       patterns: [
-        { from: "src/styles.css", to: "styles.css" },
-        { from: "src/workItemControl.html", to: "workItemControl.html" },
+        { from: "src/workItemControl.html", to: "workItemControl.html" }, // only HTML now
       ],
     }),
   ],
-  mode: "production", // or "production"
+  mode: "production",
 };
